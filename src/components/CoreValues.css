@@ -96,4 +96,7 @@
     text-align: center;
     align-items: center;
   }
+  .value-card-content p, .value-card-content h3 {
+    width: 100%;
+  }
 }

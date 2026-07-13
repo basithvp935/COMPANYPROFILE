@@ -130,7 +130,13 @@
   }
   .mv-light-card {
     text-align: center;
+  }
+  .mv-card-content {
+    text-align: center;
     align-items: center;
+  }
+  .mv-card-content p {
+    width: 100%;
   }
 }
 

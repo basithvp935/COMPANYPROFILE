@@ -143,6 +143,9 @@
     text-align: center;
     align-items: center;
   }
+  .modern-experience-card p, .modern-experience-card h3 {
+    width: 100%;
+  }
   .modern-card-icon {
     justify-content: center;
   }

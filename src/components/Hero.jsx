@@ -9,7 +9,7 @@ const Hero = () => {
   useEffect(() => {
     let start = 0;
     const target = 1000;
-    const duration = 2000; // 2 seconds
+    const duration = 3000; // 3 seconds
     const increment = target / (duration / 16); // 60 fps
     
     const timer = setInterval(() => {

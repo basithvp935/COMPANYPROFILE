@@ -142,8 +142,12 @@
   }
 
   .about-content-left {
-    align-items: center;
     text-align: center;
+    align-items: center;
+  }
+  
+  .about-text-dark {
+    width: 100%;
   }
 
   .about-check-list {
