@@ -72,11 +72,13 @@
   border-radius: 12px;
 }
 
-.modern-experience-card:hover {
-  background: #ffffff;
-  transform: translateY(-5px);
-  border-color: rgba(11, 124, 143, 0.25);
-  box-shadow: 0 12px 35px rgba(11, 124, 143, 0.2);
+@media (hover: hover) {
+  .modern-experience-card:hover {
+    background: #ffffff;
+    transform: translateY(-5px);
+    border-color: rgba(11, 124, 143, 0.25);
+    box-shadow: 0 12px 35px rgba(11, 124, 143, 0.2);
+  }
 }
 
 .modern-card-icon {

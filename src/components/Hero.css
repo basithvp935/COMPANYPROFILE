@@ -279,7 +279,7 @@
 
 @media (max-width: 1200px) {
   .hero-title {
-    font-size: clamp(4rem, 8vw, 6.5rem);
+    font-size: clamp(2.5rem, 8vw, 6.5rem);
   }
   .hero-title-container {
     width: 100%;

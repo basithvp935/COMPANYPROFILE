@@ -71,9 +71,12 @@
   border: 1px solid rgba(0,0,0,0.03); /* Faint border */
 }
 
-.testimonial-card-centered:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+@media (hover: hover) {
+  .testimonial-card-centered:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: rgba(244, 181, 37, 0.3);
+  }
 }
 
 .author-image-wrapper {

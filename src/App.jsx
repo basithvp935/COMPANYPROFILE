@@ -45,7 +45,7 @@ function App() {
   }, [loading]);
 
   return (
-    <>
+    <div className="app-wrapper">
       {loading && <Preloader />}
       <Navbar />
       <main>
@@ -59,7 +59,7 @@ function App() {
         <Blog />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

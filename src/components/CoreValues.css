@@ -34,9 +34,11 @@
   flex-direction: column;
 }
 
-.value-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(11, 124, 143, 0.15);
+@media (hover: hover) {
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(11, 124, 143, 0.15);
+  }
 }
 
 .value-card-image {
@@ -52,8 +54,10 @@
   transition: transform 0.5s ease;
 }
 
-.value-card:hover .value-card-image img {
-  transform: scale(1.05);
+@media (hover: hover) {
+  .value-card:hover .value-card-image img {
+    transform: scale(1.05);
+  }
 }
 
 .value-card-content {
