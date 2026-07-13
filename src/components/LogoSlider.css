@@ -1,0 +1,181 @@
+.logo-slider-container {
+  background-color: var(--bg-white, #ffffff);
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Gradient fade masks */
+.slider-wrapper::before,
+.slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-white, #ffffff) 0%, rgba(255,255,255,0) 100%);
+}
+
+.slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-white, #ffffff) 0%, rgba(255,255,255,0) 100%);
+}
+
+.slider-track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  padding-right: 4rem; /* 10th gap to make the math perfectly align */
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  /* Since padding-right adds the 10th gap, 50% of the track is exactly 5 items + 5 gaps! */
+  100% { transform: translateX(-50%); } 
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  min-width: max-content;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.logo-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Simulated Geometric Logo Mark */
+.logo-icon {
+  position: relative;
+  width: 28px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.geometric-mark {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mark-part-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 9px;
+  height: 26px;
+  background-color: var(--dark-color);
+  transform: skewX(-15deg);
+  border-radius: 2px;
+}
+
+.mark-part-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 36px;
+  background-color: var(--dark-color);
+  transform: skewX(-15deg);
+  border-radius: 2px;
+}
+
+/* Typography */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arabic-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.85rem;
+  color: var(--dark-color);
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+
+.english-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  color: var(--dark-color);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
+}
+
+/* British Centre Special Styling */
+.british-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.british-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.british-text {
+  font-family: 'Arial', sans-serif;
+  color: #c8102e; /* Flag Red */
+  font-weight: 900;
+  line-height: 1.1;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.british-sub {
+  font-size: 0.65rem;
+  color: var(--dark-color);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .logo-slider-container {
+    padding: 2rem 0;
+  }
+  .slider-wrapper::before,
+  .slider-wrapper::after {
+    width: 60px;
+  }
+  .slider-track {
+    gap: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .logo-item {
+    padding: 0.6rem 1rem;
+  }
+}

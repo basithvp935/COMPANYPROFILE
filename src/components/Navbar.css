@@ -1,0 +1,91 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 2rem 0;
+  background: transparent;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  border: 1.5px solid var(--secondary-color);
+  box-shadow: 0 0 10px rgba(244, 181, 37, 0.15);
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(244, 181, 37, 0.3);
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--dark-color);
+  fill: none;
+  display: block;
+}
+
+.social-icon:hover svg {
+  stroke: var(--dark-color);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--dark-color);
+}
+
+@media (max-width: 992px) {
+  .mobile-toggle {
+    display: none; /* Removed mobile toggle since there's no menu left */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-contact-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,156 @@
+.testimonial-section-white {
+  background-color: var(--bg-white, #ffffff); /* Changed to white */
+  padding: 4rem 0; /* Decreased section height */
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+/* Subtle background glowing line effect like image */
+.testimonial-section-white::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  width: 140%;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(11, 124, 143, 0.05) 0%, transparent 60%);
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+.section-header.center {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle-accent {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.title-dark {
+  color: var(--dark-color); /* Changed to dark for readability on white */
+}
+
+.title-accent {
+  color: var(--secondary-color); /* Theme Gold */
+}
+
+.testimonial-grid-centered {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem; /* space for dots */
+}
+
+.testimonial-card-centered {
+  background: var(--bg-white, #ffffff); /* White card background */
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04); /* Subtle shadow */
+  border: 1px solid rgba(0,0,0,0.03); /* Faint border */
+}
+
+.testimonial-card-centered:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.author-image-wrapper {
+  margin-bottom: 2.5rem;
+  padding: 4px; /* Space for the gradient border */
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Teal to Gold gradient border */
+}
+
+.author-image-centered {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--bg-white, #ffffff); /* Matches white card bg to create the hollow ring effect */
+  display: block;
+}
+
+.testimonial-content-centered {
+  color: var(--text-grey); /* Darker gray for readability */
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.testimonial-author-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-name-centered {
+  color: var(--dark-color); /* Dark instead of white */
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.author-role-centered {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 1024px) {
+  .testimonial-grid-centered {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-section-white {
+    padding: 3rem 0;
+  }
+  .testimonial-grid-centered {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
