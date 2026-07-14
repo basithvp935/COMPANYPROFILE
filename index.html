@@ -1,13 +1,647 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>temp-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Ashraf</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+<div class="preloader" id="preloader">
+  <div class="preloader-content">
+    <span class="preloader-char" style="animation-delay: 0s">M</span><span class="preloader-char" style="animation-delay: 0.05s">O</span><span class="preloader-char" style="animation-delay: 0.1s">H</span><span class="preloader-char" style="animation-delay: 0.15000000000000002s">A</span><span class="preloader-char" style="animation-delay: 0.2s">M</span><span class="preloader-char" style="animation-delay: 0.25s">M</span><span class="preloader-char" style="animation-delay: 0.30000000000000004s">E</span><span class="preloader-char" style="animation-delay: 0.35000000000000003s">D</span><span class="preloader-char" style="animation-delay: 0.4s">&nbsp;</span><span class="preloader-char" style="animation-delay: 0.45s">A</span><span class="preloader-char" style="animation-delay: 0.5s">S</span><span class="preloader-char" style="animation-delay: 0.55s">H</span><span class="preloader-char" style="animation-delay: 0.6000000000000001s">R</span><span class="preloader-char" style="animation-delay: 0.65s">A</span><span class="preloader-char" style="animation-delay: 0.7000000000000001s">F</span>
+  </div>
+</div>
+
+<div class="app-wrapper">
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="#">Mohammed Ashraf</a>
+    </div>
+    
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-yellow nav-contact-btn">Contact Us</a>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Instagram"><i data-feather="instagram"></i></a>
+        <a href="#" class="social-icon" aria-label="Facebook"><i data-feather="facebook"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i data-feather="twitter"></i></a>
+      </div>
+      <button class="mobile-toggle" id="mobile-menu-btn">
+        <i data-lucide="menu" id="menu-icon"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-container">
+    <div class="hero-left">
+      <div class="vertical-text-container stagger-1">
+        <div class="circle-arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </div>
+        <span class="vertical-text">Educational Leader</span>
+      </div>
+      <div class="image-wrapper stagger-2">
+        <img src="assets/images/ashraf.png" alt="Mohammed Ashraf" class="hero-person-img" />
+      </div>
+    </div>
+    <div class="hero-right">
+      <p class="hero-top-text stagger-3">15 Years of Excellence, Building Futures</p>
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          <div class="title-line stagger-4">Educational</div>
+          <div class="title-line indented stagger-5">
+            <div class="title-arrow">
+              <i data-lucide="arrow-down-right" stroke-width="1.5" width="56" height="56"></i>
+            </div>
+            <span class="text-unfiltered">Excellence</span>
+          </div>
+        </h1>
+      </div>
+      <div class="hero-bottom-section">
+        <div class="hero-desc-box stagger-6">
+          <p class="desc-subtitle">Founder & Visionary</p>
+          <p class="desc-text">
+            Hi, I'm Mohammed Ashraf, an educational leader with a passion for guiding students and building institutions like Brilliant Education Centre.
+          </p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn btn-solid">Get Started</a>
+            <a href="#contact" class="btn-text">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-stats-card stagger-7">
+          <p class="stats-title">Happy Students</p>
+          <div class="stats-content">
+            <div class="avatar-group">
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=100&h=100&fit=crop" alt="student" class="avatar" />
+              <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=100&h=100&fit=crop" alt="student" class="avatar" />
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="student" class="avatar" />
+            </div>
+            <span class="stats-number" id="student-count">0+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-line line-horizontal animate-line-x"></div>
+  <div class="bg-line line-angled animate-line-diag"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-light" id="about">
+  <div class="container">
+    <div class="about-grid-light">
+      <div class="about-content-left">
+        <h2 class="section-title-dark">My Journey in <span class="text-secondary-gradient">Education</span></h2>
+        <p class="about-text-dark">
+          Fifteen years ago, I embarked on a mission to transform the educational landscape by founding Brilliant Education Centre. What started as a vision has grown into a trusted coaching center and educational group in the Middle East.
+        </p>
+        <p class="about-text-dark">
+          My major concern has always been student success—helping them develop the skills, knowledge, and confidence needed to face various challenges and become well-prepared for today's competitive world.
+        </p>
+        <ul class="about-check-list">
+          <li>
+            <i data-lucide="check-circle-2" class="check-icon"></i>
+            <span><strong>Proven Excellence:</strong> Consistent results and top achievers.</span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2" class="check-icon"></i>
+            <span><strong>Expert Mentorship:</strong> Tailored guidance for every student.</span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2" class="check-icon"></i>
+            <span><strong>Innovative Curriculum:</strong> Modern approaches to classic learning.</span>
+          </li>
+        </ul>
+        <div class="about-actions">
+          <a href="#contact" class="btn btn-yellow">Get Started</a>
+          <a href="#experience" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="about-image-right">
+        <div class="image-wrapper">
+          <img src="assets/images/founder.png" alt="Education abstract" class="main-portrait-img" />
+          <div class="floating-quote-box">
+            <div class="quote-avatar">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="quote-text">
+              <p>"15+ Years of Excellence. My major concern has always been student success and building confidence." - Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO SLIDER -->
+<div class="logo-slider-container">
+  <div class="container">
+    <div class="slider-wrapper">
+      <div class="slider-track">
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">بريليانت إيديوكيشن سنتر</div>
+                <div class="english-text">Brilliant Education</div>
+                <div class="english-text">Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">مركز وسام التعليمي</div>
+                <div class="english-text">Wisdom Education</div>
+                <div class="english-text">Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">مركز المواهب التعليمي</div>
+                <div class="english-text">Talent Education</div>
+                <div class="english-text">Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="british-logo">
+                <div class="british-flag">
+                  <i data-lucide="flag" fill="#d32f2f" stroke-width="0"></i>
+                </div>
+                <div class="british-text-wrapper">
+                  <div class="british-text">BRITISH</div>
+                  <div class="british-sub">LANGUAGE CENTRE</div>
+                </div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">مركز بريليانت لتدريب الحاسب الآلي</div>
+                <div class="english-text">Brilliant Computer</div>
+                <div class="english-text">& Robotics Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">بريليانت إيديوكيشن سنتر</div>
+                <div class="english-text">Brilliant Education</div>
+                <div class="english-text">Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">مركز وسام التعليمي</div>
+                <div class="english-text">Wisdom Education</div>
+                <div class="english-text">Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">مركز المواهب التعليمي</div>
+                <div class="english-text">Talent Education</div>
+                <div class="english-text">Centre</div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="british-logo">
+                <div class="british-flag">
+                  <i data-lucide="flag" fill="#d32f2f" stroke-width="0"></i>
+                </div>
+                <div class="british-text-wrapper">
+                  <div class="british-text">BRITISH</div>
+                  <div class="british-sub">LANGUAGE CENTRE</div>
+                </div>
+              </div>
+            
+          </div>
+        
+          <div class="logo-item">
+            
+              <div class="logo-icon">
+                <div class="geometric-mark">
+                  <div class="mark-part-1"></div>
+                  <div class="mark-part-2"></div>
+                </div>
+              </div>
+              <div class="logo-text">
+                <div class="arabic-text">مركز بريليانت لتدريب الحاسب الآلي</div>
+                <div class="english-text">Brilliant Computer</div>
+                <div class="english-text">& Robotics Centre</div>
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CORE VALUES -->
+<section class="section core-values-section" id="core-values">
+  <div class="container">
+    <h2 class="core-values-title">
+      CORE <span class="title-accent">VALUES</span>
+    </h2>
+    <div class="values-grid">
+      
+        <div class="value-card">
+          <div class="value-card-image">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="ETHICAL LEADERSHIP" />
+          </div>
+          <div class="value-card-content">
+            <h3>ETHICAL LEADERSHIP</h3>
+            <p>We lead with integrity, transparency, and truth. Every action and decision is guided by fairness and moral strength because genuine success stands on the foundation of ethics.</p>
+          </div>
+        </div>
+      
+        <div class="value-card">
+          <div class="value-card-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="PURPOSE-DRIVEN GROWTH" />
+          </div>
+          <div class="value-card-content">
+            <h3>PURPOSE-DRIVEN GROWTH</h3>
+            <p>Business must serve beyond profit. We believe in entrepreneurship with purpose — creating value that uplifts people, solves real problems, and contributes to a better society.</p>
+          </div>
+        </div>
+      
+        <div class="value-card">
+          <div class="value-card-image">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="SUSTAINABILITY & LEGACY" />
+          </div>
+          <div class="value-card-content">
+            <h3>SUSTAINABILITY & LEGACY</h3>
+            <p>Legacy is built through continuity and contribution. We help leaders design systems, culture, and governance that sustain their vision for generations — leaving behind institutions of excellence, not just enterprises.</p>
+          </div>
+        </div>
+      
+        <div class="value-card">
+          <div class="value-card-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="BALANCED LIFE — FAMILY, BUSINESS, SOCIETY & SPIRITUALITY" />
+          </div>
+          <div class="value-card-content">
+            <h3>BALANCED LIFE — FAMILY, BUSINESS, SOCIETY & SPIRITUALITY</h3>
+            <p>True growth is harmony. We nurture balance between personal well-being, family values, professional excellence, social contribution, and spiritual peace — ensuring success that feels complete.</p>
+          </div>
+        </div>
+      
+        <div class="value-card">
+          <div class="value-card-image">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="COLLECTIVE GROWTH & COLLABORATION" />
+          </div>
+          <div class="value-card-content">
+            <h3>COLLECTIVE GROWTH & COLLABORATION</h3>
+            <p>We rise by lifting others. We foster a trusted circle of entrepreneurs who share ideas, resources, and opportunities — creating an ecosystem where everyone grows together.</p>
+          </div>
+        </div>
+      
+        <div class="value-card">
+          <div class="value-card-image">
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop" alt="CONTINUOUS LEARNING & GROWTH MINDSET" />
+          </div>
+          <div class="value-card-content">
+            <h3>CONTINUOUS LEARNING & GROWTH MINDSET</h3>
+            <p>Great leaders never stop learning. We cultivate curiosity, innovation, and adaptability — preparing entrepreneurs to thrive in a fast-changing world with wisdom, humility, and vision.</p>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section experience-modern" id="experience">
+  <div class="container">
+    <div class="experience-header">
+      <div class="header-left">
+        <span class="section-badge-dark">PROFESSIONAL ENDEAVORS</span>
+        <h2 class="section-title-dark">Institutions built on <br/><span class="text-secondary">trust & quality</span></h2>
+      </div>
+      <div class="header-right">
+        <p>My journey is defined by creating educational institutions that prioritize student success. We provide top-tier coaching to thousands of students, maintaining the highest standards of academic excellence.</p>
+        <p>From custom curriculums to secure environments, we ensure students get the exact tools they need to lead in today's competitive world.</p>
+      </div>
+    </div>
+    <div class="modern-cards-grid">
+      
+        <div class="modern-experience-card">
+          <div class="modern-card-icon"><i data-lucide="building" stroke-width="1" width="48" height="48"></i></div>
+          <h3>Brilliant Group of Institutions</h3>
+          <p>Providing top-tier educational coaching and mentoring to thousands of students across Qatar. Unlocking new value with tailored IT services and institutional guidance.</p>
+          <a href="#about" class="learn-more-link">
+            Learn More <i data-lucide="arrow-right" width="18" height="18"></i>
+          </a>
+        </div>
+      
+        <div class="modern-experience-card">
+          <div class="modern-card-icon"><i data-lucide="graduation-cap" stroke-width="1" width="48" height="48"></i></div>
+          <h3>Noble International School</h3>
+          <p>We help institutions grow with strategies that drive impact. Guiding institutional growth and maintaining high standards of academic excellence.</p>
+          <a href="#about" class="learn-more-link">
+            Learn More <i data-lucide="arrow-right" width="18" height="18"></i>
+          </a>
+        </div>
+      
+        <div class="modern-experience-card">
+          <div class="modern-card-icon"><i data-lucide="globe" stroke-width="1" width="48" height="48"></i></div>
+          <h3>Brilliant Education Centre</h3>
+          <p>At Brilliant, we deliver trusted coaching that helps our students grow. Founded 15 years ago to deliver trusted guidance in the Middle East.</p>
+          <a href="#about" class="learn-more-link">
+            Learn More <i data-lucide="arrow-right" width="18" height="18"></i>
+          </a>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- MISSION VISION -->
+<section class="section mission-vision-white" id="mission-vision">
+  <div class="container">
+    <div class="mv-grid">
+      <div class="mv-column">
+        <div class="mv-heading-box left-heading">
+          <i data-lucide="plus" width="60" height="60" stroke-width="1" class="plus-icon"></i>
+          <h2 class="mv-title">
+            <span class="title-dark">OUR</span>
+            <span class="title-accent">MISSION</span>
+          </h2>
+        </div>
+        <div class="mv-light-card">
+          <div class="mv-card-content">
+            <p>To provide world-class educational coaching and leadership guidance that unlocks the true potential of students and educators. We are committed to fostering an environment built on trust, quality, and continuous, purposeful growth.</p>
+            <div class="accent-square solid"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mv-column">
+        <div class="mv-heading-box right-heading">
+          <h2 class="mv-title">
+            <span class="title-dark">OUR</span>
+            <span class="title-accent">VISION</span>
+          </h2>
+          <i data-lucide="plus" width="60" height="60" stroke-width="1" class="plus-icon"></i>
+        </div>
+        <div class="mv-light-card">
+          <div class="mv-card-content">
+            <div class="accent-square outline"></div>
+            <p>To be a global leader in shaping the future of education by empowering institutions with innovative strategies, enduring values, and an unwavering commitment to academic excellence for generations to come.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonial-section-white" id="testimonials">
+  <div class="container">
+    <div class="section-header center">
+      <span class="subtitle-accent">TESTIMONIAL</span>
+      <h2 class="section-title">
+        <span class="title-dark">Professional</span> <span class="title-accent">Endorsements</span>
+      </h2>
+    </div>
+    <div class="testimonial-grid-centered">
+      
+        <div class="testimonial-card-centered">
+          <div class="author-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Dr. Sarah Ahmed" class="author-image-centered" />
+          </div>
+          <p class="testimonial-content-centered">Mohammed Ashraf's visionary leadership completely transformed our approach to learning. His focus on academic excellence at Brilliant Education Centre is truly unparalleled.</p>
+          <div class="testimonial-author-centered">
+            <h4 class="author-name-centered">Dr. Sarah Ahmed</h4>
+            <span class="author-role-centered">Director, Brilliant Education</span>
+          </div>
+        </div>
+      
+        <div class="testimonial-card-centered">
+          <div class="author-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" alt="David Chen" class="author-image-centered" />
+          </div>
+          <p class="testimonial-content-centered">Working under his guidance at Wisdom Education Centre has been enriching. He builds not just modern facilities, but thriving ecosystems of student growth.</p>
+          <div class="testimonial-author-centered">
+            <h4 class="author-name-centered">David Chen</h4>
+            <span class="author-role-centered">Senior Educator</span>
+          </div>
+        </div>
+      
+        <div class="testimonial-card-centered">
+          <div class="author-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Aisha Rahman" class="author-image-centered" />
+          </div>
+          <p class="testimonial-content-centered">A true pioneer in Qatar's education sector. The strategic direction he provided for the Talent Education Centre helped us achieve record-breaking student performance.</p>
+          <div class="testimonial-author-centered">
+            <h4 class="author-name-centered">Aisha Rahman</h4>
+            <span class="author-role-centered">Academic Coordinator</span>
+          </div>
+        </div>
+      
+    </div>
+    <div class="slider-dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section blog-section-white" id="blog">
+  <div class="container">
+    <div class="section-header center">
+      <h2 class="section-title">
+        <span class="title-dark">LATEST</span> <span class="title-accent">INSIGHTS</span>
+      </h2>
+      <p class="section-subtitle">
+        Thoughts, strategies, and updates from my journey in educational leadership.
+      </p>
+    </div>
+    <div class="blog-grid">
+      
+        <article class="blog-card">
+          <div class="blog-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2064&auto=format&fit=crop" alt="The Future of EdTech: Transforming Traditional Classrooms" class="blog-image" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="meta-item"><i data-lucide="calendar" width="14" height="14"></i> July 12, 2026</span>
+            </div>
+            <h3 class="blog-title">The Future of EdTech: Transforming Traditional Classrooms</h3>
+            <p class="blog-excerpt">Discover how emerging technologies are reshaping the educational landscape and providing unprecedented opportunities for personalized learning.</p>
+            <a href="#read-more" class="read-more-btn">
+              Read More <i data-lucide="arrow-right" width="16" height="16" class="arrow-icon"></i>
+            </a>
+          </div>
+        </article>
+      
+        <article class="blog-card">
+          <div class="blog-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop" alt="Cultivating Leadership Skills in Tomorrow's Educators" class="blog-image" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="meta-item"><i data-lucide="calendar" width="14" height="14"></i> June 28, 2026</span>
+            </div>
+            <h3 class="blog-title">Cultivating Leadership Skills in Tomorrow's Educators</h3>
+            <p class="blog-excerpt">Effective institutional growth starts with empowering teachers. Learn the core strategies for building a strong foundation of leadership within your faculty.</p>
+            <a href="#read-more" class="read-more-btn">
+              Read More <i data-lucide="arrow-right" width="16" height="16" class="arrow-icon"></i>
+            </a>
+          </div>
+        </article>
+      
+        <article class="blog-card">
+          <div class="blog-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop" alt="Bridging the Gap: Academic Excellence and Core Values" class="blog-image" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="meta-item"><i data-lucide="calendar" width="14" height="14"></i> June 15, 2026</span>
+            </div>
+            <h3 class="blog-title">Bridging the Gap: Academic Excellence and Core Values</h3>
+            <p class="blog-excerpt">Academic success is only one piece of the puzzle. Explore how integrating ethical values into the curriculum creates well-rounded, future-ready students.</p>
+            <a href="#read-more" class="read-more-btn">
+              Read More <i data-lucide="arrow-right" width="16" height="16" class="arrow-icon"></i>
+            </a>
+          </div>
+        </article>
+      
+    </div>
+    <div class="blog-footer">
+      <a href="#all-posts" class="btn-outline">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-content-new">
+      <div class="footer-brand-section">
+        <h2 class="footer-logo">
+          <span class="logo-white">Mohammed</span> <span class="logo-accent">Ashraf</span>
+        </h2>
+        <div class="footer-left-card">
+          <p>
+            Founder & Educational Leader based in Qatar, dedicated to shaping the future through excellence in education, guiding institutional growth, and ensuring sustainable success.
+          </p>
+          <div class="social-links-new">
+            <a href="#" class="social-icon" aria-label="Instagram"><i data-feather="instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i data-feather="facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mohammed-ashraf-brilliant-qatar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-info">
+        <h3>Connect</h3>
+        <div class="contact-block">
+          <h4>Email</h4>
+          <p>contact@example.com</p>
+        </div>
+        <div class="contact-block">
+          <h4>Phone</h4>
+          <p>+974 (123) 456-7890</p>
+        </div>
+        <div class="contact-block">
+          <h4>Address</h4>
+          <p>Doha, Qatar</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mohammed Ashraf. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/script.js"></script>
+
+</body>
 </html>
