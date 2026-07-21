@@ -2431,12 +2431,11 @@ a {
 .fab-action:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-  color: #fff;
 }
 
 .fab-whatsapp { background-color: #1FAF38; }
-.fab-download { background-color: #F83A56; }
-.fab-join { background-color: #9254FF; }
+.fab-download { background-color: var(--secondary-color); color: var(--dark-color); }
+.fab-join { background-color: var(--dark-color); }
 
 .fab-action svg {
   width: 20px;
