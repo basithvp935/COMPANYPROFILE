@@ -670,6 +670,56 @@
 
 </div>
 
+<!-- Floating Action Button (FAB) Menu -->
+<div class="fab-container" id="fab-container">
+  <div class="fab-menu">
+    <a href="#contact" class="fab-action fab-join">
+      <i data-lucide="mail"></i>
+      <span class="fab-label">Send a Message</span>
+    </a>
+    <a href="#" class="fab-action fab-download" download>
+      <i data-lucide="cloud-download"></i>
+      <span class="fab-label">Download Profile</span>
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank" class="fab-action fab-whatsapp">
+      <i data-lucide="message-circle"></i>
+      <span class="fab-label">Chat on WhatsApp</span>
+    </a>
+  </div>
+  <button class="fab-toggle" id="fab-toggle">
+    <i data-lucide="plus" class="fab-icon-plus"></i>
+    <i data-lucide="x" class="fab-icon-close"></i>
+  </button>
+</div>
+
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contact-modal">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close">
+      <i data-lucide="x"></i>
+    </button>
+    <div class="modal-header">
+      <h3>Send a Message</h3>
+      <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+    </div>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="john@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="How can I help you?" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
 <!-- Scripts -->
 <script src="assets/js/script.js"></script>
 

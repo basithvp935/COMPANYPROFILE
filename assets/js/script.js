@@ -74,4 +74,46 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 6. FAB Logic
+    const fabToggle = document.getElementById('fab-toggle');
+    const fabContainer = document.getElementById('fab-container');
+    if (fabToggle && fabContainer) {
+        fabToggle.addEventListener('click', () => {
+            fabContainer.classList.toggle('active');
+        });
+        
+        // Close FAB menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!fabContainer.contains(e.target) && fabContainer.classList.contains('active')) {
+                fabContainer.classList.remove('active');
+            }
+        });
+    }
+
+    // 7. Modal Logic
+    const modalOverlay = document.getElementById('contact-modal');
+    const modalClose = document.getElementById('modal-close');
+    const joinBtn = document.querySelector('.fab-join');
+    
+    if (joinBtn && modalOverlay) {
+        joinBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link jump
+            modalOverlay.classList.add('active');
+            if(fabContainer) fabContainer.classList.remove('active'); // Close FAB menu
+        });
+        
+        if (modalClose) {
+            modalClose.addEventListener('click', () => {
+                modalOverlay.classList.remove('active');
+            });
+        }
+        
+        // Close modal when clicking outside
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                modalOverlay.classList.remove('active');
+            }
+        });
+    }
 });
