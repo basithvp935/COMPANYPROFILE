@@ -1251,17 +1251,38 @@ a {
   }
 }
 
+.mobile-hero-name {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .hero-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     gap: 2rem;
+  }
+  
+  .hero-left {
+    flex-direction: column;
+    align-items: center;
   }
   
   .image-wrapper {
     height: 60vh;
     max-height: 450px;
+  }
+  
+  .mobile-hero-name {
+    display: block;
+    font-size: 2.4rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--dark-color);
+    letter-spacing: 1px;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   .hero-person-img {
@@ -2095,6 +2116,18 @@ a {
     padding: 3rem 2rem;
   }
   .fm-statement { font-size: 1.8rem; }
+  .fm-sub-statement,
+  .desc-text,
+  .about-text-dark,
+  .value-card-content p,
+  .mv-card-content p,
+  .modern-experience-card p,
+  .testimonial-content-centered,
+  .blog-excerpt,
+  .footer-left-card p,
+  .contact-block p {
+    text-align: justify;
+  }
   .fm-circle-bg { width: 280px; height: 280px; }
   .fm-circle-image-wrapper { width: 280px; height: 320px; }
   .fm-portrait { max-height: 360px; }
