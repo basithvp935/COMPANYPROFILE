@@ -2092,8 +2092,10 @@ a {
   align-items: center;
   border-radius: 50%;
   overflow: hidden;
-  border: 6px solid var(--bg-white);
-  box-shadow: 0 0 0 4px var(--secondary-color), 0 20px 40px rgba(0,0,0,0.15);
+  border: 6px solid var(--secondary-color);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  transform: translateZ(0);
 }
 
 .fm-portrait {
@@ -2165,8 +2167,8 @@ a {
     text-align: justify;
   }
   .fm-circle-bg { width: 280px; height: 280px; }
-  .fm-circle-image-wrapper { width: 280px; height: 320px; }
-  .fm-portrait { max-height: 360px; }
+  .fm-circle-image-wrapper { width: 280px; height: 280px; }
+  .fm-portrait { max-height: 280px; }
   .fm-author-block { text-align: center; }
 }
 
