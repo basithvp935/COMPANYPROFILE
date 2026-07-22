@@ -1270,7 +1270,15 @@ a {
     word-break: break-word;
   }
   .hero-title.modern-title {
-    font-size: clamp(1.1rem, 4vw, 2rem) !important;
+    font-size: clamp(1.6rem, 5.5vw, 2.5rem) !important;
+    white-space: normal;
+  }
+  .title-line {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .title-line.indented {
+    transform: translateX(0);
   }
 }
 
