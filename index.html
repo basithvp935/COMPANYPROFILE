@@ -27,7 +27,7 @@
 <header class="navbar">
   <div class="container nav-container">
     <div class="logo">
-      <a href="#">Mohammed Ashraf</a>
+      <a href="#"></a>
     </div>
     
     <div class="nav-right">
@@ -50,7 +50,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="container hero-container">
-    <div class="hero-left">
+    <div class="hero-left delayed-scroll-reveal">
       <div class="vertical-text-container stagger-1">
         <div class="circle-arrow">
           <i data-lucide="arrow-up-right"></i>
@@ -60,7 +60,7 @@
       <div class="image-wrapper stagger-2">
         <img src="assets/images/ashraf.png" alt="Mohammed Ashraf" class="hero-person-img" />
       </div>
-      <h2 class="mobile-hero-name">Mohammed Ashraf</h2>
+      <h2 class="mobile-hero-name name-scroll-reveal">Mohammed <span class="text-secondary-gradient">Ashraf</span></h2>
     </div>
     <div class="hero-right">
       <p class="hero-top-text stagger-3">Educator. Founder. Mentor.</p>
@@ -84,8 +84,8 @@
             I'm Mohammed Ashraf — for the past 15 years I've built institutions across Qatar that don't just teach students, they transform them. From Brilliant Education Centre to a growing family of learning brands, my mission is simple: help every student walk in with potential and walk out with confidence.
           </p>
           <div class="hero-buttons">
-            <a href="#about" class="btn btn-solid">Get Started</a>
-            <a href="#contact" class="btn-text">Contact Us</a>
+            <!-- <a href="#about" class="btn btn-solid">Get Started</a> -->
+            <a href="#contact" class="btn btn-solid">Contact Us</a>
           </div>
         </div>
         <div class="hero-stats-card stagger-7">
@@ -132,10 +132,10 @@
             <span><strong>Curriculum That Evolves:</strong> We don't teach the way it's always been done — we teach the way it needs to be done now.</span>
           </li>
         </ul>
-        <div class="about-actions">
+        <!-- <div class="about-actions">
           <a href="#contact" class="btn btn-yellow">Get Started</a>
           <a href="#experience" class="btn btn-outline">Our Services</a>
-        </div>
+        </div> -->
       </div>
       <div class="about-image-right">
         <div class="image-wrapper">
@@ -332,7 +332,7 @@
         <div class="mv-heading-box left-heading">
           <i data-lucide="plus" width="60" height="60" stroke-width="1" class="plus-icon"></i>
           <h2 class="mv-title">
-            <span class="title-dark">Our</span>
+            <span class="title-dark">My</span>
             <span class="title-accent">Mission</span>
           </h2>
         </div>
@@ -346,7 +346,7 @@
       <div class="mv-column">
         <div class="mv-heading-box right-heading">
           <h2 class="mv-title">
-            <span class="title-dark">Our</span>
+            <span class="title-dark">My</span>
             <span class="title-accent">Vision</span>
           </h2>
           <i data-lucide="plus" width="60" height="60" stroke-width="1" class="plus-icon"></i>
@@ -373,7 +373,7 @@
       
       <!-- TOP: Circular Image -->
       <div class="fm-circle-image-wrapper animate-fade-in-up">
-        <img src="assets/images/fo.jpg" alt="Mohammed Ashraf - Founder" class="fm-portrait" />
+        <img src="assets/images/ashraf.png" alt="Mohammed Ashraf - Founder" class="fm-portrait" />
       </div>
       
       <!-- BOTTOM: Content -->
@@ -482,18 +482,31 @@
           <div class="modern-card-icon"><i data-lucide="building" stroke-width="1" width="48" height="48"></i></div>
           <h3>Brilliant Group of Institutions</h3>
           <p>The flagship — top-tier coaching and mentoring for thousands of students across Qatar, paired with the systems and IT infrastructure that keep quality consistent at scale.</p>
+          <div class="card-btn-container">
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
         </div>
       
         <div class="modern-experience-card">
-          <div class="modern-card-icon"><i data-lucide="graduation-cap" stroke-width="1" width="48" height="48"></i></div>
+          <div class="modern-card-logo">
+            <img src="assets/images/noble.png" alt="Noble International School Logo">
+          </div>
           <h3>Noble International School</h3>
           <p>Where institutional strategy meets academic ambition — I work with school leadership to sharpen growth strategy without compromising the standards that matter.</p>
+          <div class="card-btn-container">
+            <a href="https://www.nobleqatar.com/" target="_blank" class="btn btn-outline">Learn More</a>
+          </div>
         </div>
       
         <div class="modern-experience-card">
-          <div class="modern-card-icon"><i data-lucide="globe" stroke-width="1" width="48" height="48"></i></div>
+          <div class="modern-card-logo">
+            <img src="assets/images/brilliant.png" alt="Brilliant Education Centre Logo">
+          </div>
           <h3>Brilliant Education Centre</h3>
           <p>Where it all began. Fifteen years of trusted, hands-on coaching that's shaped the way an entire region thinks about after-school education.</p>
+          <div class="card-btn-container">
+            <a href="https://brilliantqatar.com/" target="_blank" class="btn btn-outline">Learn More</a>
+          </div>
         </div>
       
     </div>
@@ -510,41 +523,43 @@
         <span class="title-dark">Professional</span> <span class="title-accent">Endorsements</span>
       </h2>
     </div>
-    <div class="testimonial-grid-centered">
-      
-        <div class="testimonial-card-centered">
-          <div class="author-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Dr. Sarah Ahmed" class="author-image-centered" />
+    <div class="testimonial-slider-viewport">
+      <div class="testimonial-grid-centered" id="testimonial-slider-track">
+        
+          <div class="testimonial-card-centered">
+            <div class="author-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Dr. Sarah Ahmed" class="author-image-centered" />
+            </div>
+            <p class="testimonial-content-centered">Mohammed Ashraf's visionary leadership completely transformed our approach to learning. His focus on academic excellence at Brilliant Education Centre is truly unparalleled.</p>
+            <div class="testimonial-author-centered">
+              <h4 class="author-name-centered">Dr. Sarah Ahmed</h4>
+              <span class="author-role-centered">Director, Brilliant Education</span>
+            </div>
           </div>
-          <p class="testimonial-content-centered">Mohammed Ashraf's visionary leadership completely transformed our approach to learning. His focus on academic excellence at Brilliant Education Centre is truly unparalleled.</p>
-          <div class="testimonial-author-centered">
-            <h4 class="author-name-centered">Dr. Sarah Ahmed</h4>
-            <span class="author-role-centered">Director, Brilliant Education</span>
+        
+          <div class="testimonial-card-centered">
+            <div class="author-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" alt="David Chen" class="author-image-centered" />
+            </div>
+            <p class="testimonial-content-centered">Working under his guidance at Wisdom Education Centre has been enriching. He builds not just modern facilities, but thriving ecosystems of student growth.</p>
+            <div class="testimonial-author-centered">
+              <h4 class="author-name-centered">David Chen</h4>
+              <span class="author-role-centered">Senior Educator</span>
+            </div>
           </div>
-        </div>
-      
-        <div class="testimonial-card-centered">
-          <div class="author-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" alt="David Chen" class="author-image-centered" />
+        
+          <div class="testimonial-card-centered">
+            <div class="author-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Aisha Rahman" class="author-image-centered" />
+            </div>
+            <p class="testimonial-content-centered">A true pioneer in Qatar's education sector. The strategic direction he provided for the Talent Education Centre helped us achieve record-breaking student performance.</p>
+            <div class="testimonial-author-centered">
+              <h4 class="author-name-centered">Aisha Rahman</h4>
+              <span class="author-role-centered">Academic Coordinator</span>
+            </div>
           </div>
-          <p class="testimonial-content-centered">Working under his guidance at Wisdom Education Centre has been enriching. He builds not just modern facilities, but thriving ecosystems of student growth.</p>
-          <div class="testimonial-author-centered">
-            <h4 class="author-name-centered">David Chen</h4>
-            <span class="author-role-centered">Senior Educator</span>
-          </div>
-        </div>
-      
-        <div class="testimonial-card-centered">
-          <div class="author-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Aisha Rahman" class="author-image-centered" />
-          </div>
-          <p class="testimonial-content-centered">A true pioneer in Qatar's education sector. The strategic direction he provided for the Talent Education Centre helped us achieve record-breaking student performance.</p>
-          <div class="testimonial-author-centered">
-            <h4 class="author-name-centered">Aisha Rahman</h4>
-            <span class="author-role-centered">Academic Coordinator</span>
-          </div>
-        </div>
-      
+        
+      </div>
     </div>
     <div class="slider-dots">
       <span class="dot"></span>
@@ -617,7 +632,7 @@
       
     </div>
     <div class="blog-footer">
-      <a href="#all-posts" class="btn-outline">View All Articles</a>
+      <a href="blogs.html" class="btn-outline">View All Articles</a>
     </div>
   </div>
 </section>
