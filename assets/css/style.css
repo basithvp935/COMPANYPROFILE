@@ -2264,7 +2264,13 @@ a {
   .fm-vertical-container {
     padding: 3rem 2rem;
   }
-  .fm-statement { font-size: 1.8rem; }
+  .fm-statement { 
+    font-size: 1.5rem; 
+    text-align: center;
+  }
+  .fm-sub-statement {
+    text-align: justify !important;
+  }
   .fm-sub-statement,
   .desc-text,
   .about-text-dark,
